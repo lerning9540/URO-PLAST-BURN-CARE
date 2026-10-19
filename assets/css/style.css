@@ -219,6 +219,42 @@ img { max-width: 100%; display: block; }
   .panel { padding: 18px; }
   .videos { grid-template-columns: 1fr; }
 }
+/* phones */
+@media (max-width: 600px) {
+  html { -webkit-text-size-adjust: 100%; }
+  .hero-center { padding: 32px 0 28px; }
+  .hero h1 { font-size: 2.1rem; }
+  .hero-lead { font-size: 1rem; }
+  .hero-actions .btn { flex: 1 1 100%; justify-content: center; }
+  .block { padding: 36px 0; }
+  .sec-sub { margin-bottom: 18px; }
+  /* topic cards become a compact tap list */
+  .topics { grid-template-columns: 1fr; gap: 10px; }
+  .topic-card { flex-direction: row; flex-wrap: wrap; align-items: center; column-gap: 14px; row-gap: 0; padding: 14px 16px; border-top: 0; border-left: 5px solid var(--c); }
+  .topic-card:hover { transform: none; }
+  .tc-icon { width: 52px; height: 52px; font-size: 1.8rem; margin: 0; flex: none; }
+  .tc-th { flex: 1; min-width: 0; font-size: 1.05rem; }
+  .tc-en { width: 100%; padding-left: 66px; margin-top: -10px; font-size: .82rem; }
+  .tc-lead, .tc-more { display: none; }
+  .journey li { padding: 14px 16px; }
+  .videos { gap: 14px; }
+  /* topic pages */
+  .th-grid { padding: 22px 0; gap: 18px; }
+  .topic-hero h1 { font-size: 1.6rem; }
+  .topic-hero .hero-lead { font-size: .98rem; }
+  .th-art img { max-height: 220px; }
+  .topic-body { padding: 0 0 40px; gap: 14px; }
+  .toc { position: sticky; top: 56px; z-index: 20; margin: 0 -16px; border-radius: 0; border-left: 0; border-right: 0; padding: 8px 12px; box-shadow: 0 4px 10px rgba(18,48,74,.06); }
+  .toc a { background: var(--c-soft); border-radius: 999px; padding: 6px 14px; font-size: .88rem; }
+  .content { gap: 14px; }
+  .panel { padding: 16px; border-radius: 14px; scroll-margin-top: 112px; }
+  .panel h2 { font-size: 1.1rem; }
+  .k-danger ul { grid-template-columns: 1fr; gap: 6px; }
+  .pager a { flex-basis: 100%; text-align: left !important; }
+  .site-header .bar { min-height: 56px; }
+  .lb-close { top: 8px; right: 8px; }
+}
+
 @media print {
   .site-header, .fab-call, .to-top, .toc, .pager, .media video { display: none !important; }
   .topic-body { display: block; }
